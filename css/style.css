@@ -2985,7 +2985,7 @@ article#tag .all-tags ul li span:before {
 .article h3 {
   text-align: left;
   color: var(--color-h3);
-  margin-top: 32px;
+  margin-top: 24px;
 }
 .article h4 {
   text-align: left;
@@ -4013,9 +4013,6 @@ article#comments #loading-comments a.load-comments:hover {
 .white-box {
   background: var(--color-card);
 }
-.reveal {
-  visibility: hidden;
-}
 img {
   max-width: 100%;
 }
@@ -4094,7 +4091,7 @@ img.lazyload:not(.placeholder).loaded {
   margin-bottom: 1em;
 }
 .md h3:before {
-  margin-top: -48px;
+  margin-top: -56px;
 }
 .md h4:before {
   margin-top: -64px;
