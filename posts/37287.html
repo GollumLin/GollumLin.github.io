@@ -28,7 +28,7 @@
   
 
   
-    <meta name="description" content="这篇文章记录了博客的搭建过程以及所踩的一些坑。未完待续……">
+    <meta name="description" content="这篇文章记录了博客的搭建过程以及所踩的一些坑。(感觉写的乱七八糟，先就这了吧，以后熟悉了再完善😂)">
   
 
   <!-- feed -->
@@ -452,12 +452,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img class='headimg' src='https://bre.is/CadBCKE2'/>
+        <img class='headimg' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/cover.jpg'/>
       </a>
     </div>
   
   <div class="article-meta" id="top">
     
+    
+      <a title='Blog的部署过程' href='/posts/37287'>
+        <img class='thumbnail' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/cover.jpg'>
+      </a>
     
     
       <h1 class="title">
@@ -503,7 +507,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Blog的部署过程" data-path="/posts/37287.html">
+      <div id="lc-pv" data-title="Blog的部署过程" data-path="/posts/37287">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -521,28 +525,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p>这篇文章记录了博客的搭建过程以及所踩的一些坑。未完待续……</p>
+  <p>这篇文章记录了博客的搭建过程以及所踩的一些坑。(感觉写的乱七八糟，先就这了吧，以后熟悉了再完善😂)</p>
 <span id="more"></span>
 
 <h3 id="一、环境的搭建（win10）"><a href="#一、环境的搭建（win10）" class="headerlink" title="一、环境的搭建（win10）"></a>一、环境的搭建（win10）</h3><ol>
-<li><p>安装 <kbd>git</kbd> <a href="%E4%B8%80%E4%B8%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">^1</a></p>
+<li><p>安装 <kbd>git</kbd> [^1]</p>
 <ul>
 <li><p>进入 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">官网</a> 下载</p>
-<img src="https://bre.is/mUYH2QD6" class="lazyload" data-srcset="https://bre.is/mUYH2QD6" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="zoom:54%;" /></li>
+<p><img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog%E7%9A%84%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B/03_git%E5%AE%98%E7%BD%91_2021-03-30_10-35-39.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog%E7%9A%84%E9%83%A8%E7%BD%B2%E8%BF%87%E7%A8%8B/03_git%E5%AE%98%E7%BD%91_2021-03-30_10-35-39.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+</li>
 <li><p>安装一路默认即可（注意自定义路径）</p>
 </li>
 <li><p>安装成功后，开始菜单会有 <kbd>git bash</kbd> 选项</p>
 </li>
-<li><p><code>git</code>的 初始化 及相关内容就不在此赘述了，会另写一篇文章来记录</p>
+<li><p><code>git</code> 的初始化 及相关内容就不在此赘述了，会另写一篇文章来记录</p>
 </li>
 </ul>
 </li>
 <li><p>安装 <kbd>Node.js</kbd> [^2]</p>
 <ul>
 <li><p>进入 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">官网</a>  或 <a target="_blank" rel="noopener" href="http://nodejs.cn/download/">中文网</a> 后，选择合适的版本点击下载（官方推荐 <code>LTS</code> [^5]）</p>
-<img src="https://bre.is/s5At2hen" class="lazyload" data-srcset="https://bre.is/s5At2hen" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="官网" style="zoom:58%;" />
+<img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/01_Node官网_2021-03-30_08-58-18.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/01_Node官网_2021-03-30_08-58-18.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="官网" style="zoom:58%;" />
 
-<img src="https://bre.is/mVYXHu5n" class="lazyload" data-srcset="https://bre.is/mVYXHu5n" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="中文网" style="zoom: 50%;" /></li>
+<img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/02_Node中文网_2021-03-30_08-58-18.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/02_Node中文网_2021-03-30_08-58-18.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="中文网" style="zoom: 50%;" /></li>
 <li><p>安装还是比较简单的，自定义安装路径后就没有什么需要注意的地方，一路走默认即可。当然，安装选项可以看一看，还是比较容易理解的。非必要的可以不选，比如 <kbd>Online documentation</kbd> [^6]</p>
 </li>
 <li><p>检测：<code>node --version</code>。显示版本号即说明安装成功</p>
@@ -573,12 +578,167 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>创建一个仓库，仓库名：<code>xxx(自定义).github.io</code> ，设为 <code>Public</code> </li>
 </ol>
 <h3 id="三、初始化-Blog"><a href="#三、初始化-Blog" class="headerlink" title="三、初始化 Blog"></a>三、初始化 Blog</h3><ol>
-<li>在本地找一个 ”地儿“ 来安置</li>
-<li>初始化：<code>hexo init 博客名</code></li>
+<li><p>在本地找一个 ”地儿“ 来安置</p>
+</li>
+<li><p>初始化：<code>hexo init 博客名</code></p>
+</li>
+<li><p>寻找合适的主题，安装（<code>npm i 主题名</code> 或 <code>git clone 主题地址 themes/主题名</code> ）</p>
+</li>
+<li><p>修改配置文件（<code>_config.yml</code>）,修改主题，连接Github</p>
+</li>
+<li><p>阅读主题的官方文档，进行个性化设置（在博客目录下创建<code>_config.主题名.yml</code> ，自行修改设定）</p>
+</li>
+<li><p>新建文章，本地编辑完并“调试”完成后即可推送到Github</p>
+</li>
+</ol>
+<h3 id="四、踩的坑"><a href="#四、踩的坑" class="headerlink" title="四、踩的坑"></a>四、踩的坑</h3><ol>
+<li><p><strong>本地有多个仓库时，如何指定SSH key来进行相应远程仓库的访问</strong></p>
+<ul>
+<li><p>生成<kbd>key</kbd>的时候自定义文件名 <code>eg： id_rsa_blog</code></p>
+</li>
+<li><p>在 <kbd>.ssh</kbd> [^9]下新建<code>config</code> 文件</p>
+</li>
+<li><p>config 配置</p>
+<pre><code class="config"># ****** 此处的注释只是为了说明，不建议写入文件中 ******
+# Host ***.github.com 可以自定义
+# HostName 则是由远程仓库决定，比如：gitee.com
+# IdentityFile 是私匙的地址
+# 其余选项不修改
+
+Host blog.github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_gollumlin
+    IdentitiesOnly yes
+
+Host git.github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_git
+    IdentitiesOnly yes
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p><strong>无法连接到 <kbd>Github</kbd></strong></p>
+<pre><code class="_config.yml"># 原配置
+deploy:
+  type: &#39;git&#39;
+  repo: https://github.com/GollumLin/gollumlin.github.io.git
+  branch: main  
+# ######################
+
+# 修改后成功连接的配置
+deploy:
+  type: &#39;git&#39;
+  repo: git@blog.github.com:GollumLin/gollumlin.github.io.git
+  branch: main
+</code></pre>
+</li>
+<li><p><strong>主题的自定义</strong></p>
+<pre><code class="text">！！！看官方文档！！！
+
+不要自己瞎搞，浪费时间不说，结果还很糟。
+</code></pre>
+</li>
+<li><p><strong>文章中插入图片、视频、音乐</strong></p>
+<p><kbd><strong>插入图片</strong></kbd></p>
+<pre><code class="图片"># 有两种方法
+# 一、本地（不推荐，毕竟空间有限）
+在/source/ 新建一个图片文件夹来存放图片，使用的时候：图片文件夹名/图片
+
+# 二、使用图床（加载速度）-- 最后选择的是jsdeliver + github的方式
+#    主题中使用的也是上述方式
+-- 新建一个仓库（储存图片）
+-- 使用方式
+https://cdn.jsdelivr.net/gh/用户名/仓库名/图片（有路径的加上路径）
+</code></pre>
+<p><kbd><strong>插入音乐、视频</strong></kbd></p>
+<pre><code class="音乐、视频"># 不推荐本地方式，因为空间有限，而且效果不尽如人意
+# 推荐嵌入外链
+eg：
+&lt;iframe frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=100% height=86 src=&#39;//music.163.com/outchain/player?type=2&amp;id=548651034&amp;auto=0&amp;height=66&#39;/&gt;
+# 视频自定义样式
+&lt;style&gt;
+    .player&#123;
+        position: relative; 
+        width: 100%; 
+        height: 0; 
+        padding-bottom: 75%;
+    &#125;
+    .video&#123;
+        position: absolute; 
+        width: 100%;
+        height: 100%; 
+        left: 0; 
+     top: 0;
+    &#125;
+&lt;/style&gt;
+eg：
+    &lt;div class=&quot;player&quot;&gt;
+        &lt;iframe class=&#39;video&#39;          src=&quot;//player.bilibili.com/player.html?aid=70204950&amp;bvid=BV11E411D7UU&amp;cid=121623340&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; 
+        &lt;/iframe&gt;
+    &lt;/div&gt;
+</code></pre>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1439741084&auto=0&height=66"></iframe></li>
+</ol>
+   <style>
+       .player{
+           position: relative; 
+           width: 100%; 
+           height: 0; 
+           padding-bottom: 75%;
+       }
+       .video{
+           position: absolute; 
+           width: 100%;
+           height: 100%; 
+           left: 0; 
+           top: 0;
+       }
+   </style>
+
+<div class="player">
+    <iframe class='video' src="//player.bilibili.com/player.html?aid=70204950&bvid=BV11E411D7UU&cid=121623340&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+<ol start="5">
+<li><p><strong>文章的链接包含中文</strong></p>
+<pre><code># 使用 abbrlink 插件
+npm i hexo-abbrlink --save
+# 修改 _config.yml 文件
+permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
+abbrlink:
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
+
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing &#39;index.html&#39; from permalinks
+  # 不显示后缀（.html）
+  trailing_html: false # Set to false to remove trailing &#39;.html&#39; from permalinks
+
+# 最终显示效果：https://gollumlin.github.io/posts/37287
+</code></pre>
+</li>
+<li><p><strong>mardown 渲染（一言难尽）</strong></p>
+<pre><code class="text">-- 摘要 &lt;!--more--&gt;
+-- 本地使用的是Typora，hexo自带的并不能完美的渲染，比如脚注。也有第三方的插件，不过懒得折腾了，先凑活着看吧。
+</code></pre>
+</li>
 </ol>
 <hr>
-<p>[^2]: 基于chrome javascript运行时建立的平台，性能好、速度快。<br>[^3]: Node.js 的包管理工具<br>[^4]: 一款快速、简洁且高效的博客框架（官方描述）<br>[^5]: 即 long term suport 的缩写，字面意思「长期维护」– bug更少，也更稳定。正是推荐的理由所在。<br>[^6]: 选择该选项后，会在开始菜单文件夹里添加网站和说明文当的快捷方式<br>[^7]: -g 意味着全局安装（作用于任何项目，安装的包放在Node的安装目录下的 …/node_modules/ ），否则即为 本地安装（只作用于单个项目，安装的包在项目的 /node_modules/ ）。此外还有 开发环境（即开发项目的环境） 与 生产环境（是指成品项目所处的环境，如 服务器）的区分。<br>[^8]: cnpm 是淘宝团队维护的国内镜像，因为国外的服务器连接速度不理想。</p>
-<hr>
+<pre><code class="脚注">[^1]: 一个分布式版本管理系统
+[^2]: 基于chrome javascript运行时建立的平台，性能好、速度快。
+[^3]: Node.js 的包管理工具
+[^4]: 一款快速、简洁且高效的博客框架（官方描述）
+[^5]: 即 long term suport 的缩写，字面意思「长期维护」-- bug更少，也更稳定。正是推荐的理由所在。
+[^6]: 选择该选项后，会在开始菜单文件夹里添加网站和说明文当的快捷方式
+[^7]: -g 意味着全局安装（作用于任何项目，安装的包放在Node的安装目录下的 .../node_modules/ ），否则即为 本地安装（只作用于单个项目，安装的包在项目的 /node_modules/ ）。此外还有 开发环境（即开发项目的环境） 与 生产环境（是指成品项目所处的环境，如 服务器）的区分。
+[^8]: cnpm 是淘宝团队维护的国内镜像，因为国外的服务器连接速度不理想。
+[^9]: 位于 C:/Users/***/.ssh
+</code></pre>
 
   
   
@@ -591,7 +751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <blockquote>
             
               
-                <p>本文永久链接是：<a href=http://gollumlin.guthub.io/posts/37287.html>http://gollumlin.guthub.io/posts/37287.html</a></p>
+                <p>本文永久链接是：<a href=https://gollumlin.github.io/posts/37287>https://gollumlin.github.io/posts/37287</a></p>
               
             
           </blockquote>
@@ -608,7 +768,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-31T09:57:50+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-31T15:39:17+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2021年3月31日</p>
@@ -633,7 +793,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://gollumlin.guthub.io/posts/37287.html&title=Blog的部署过程 - GollumLin's Blog&summary=这篇文章记录了博客的搭建过程以及所踩的一些坑。未完待续……"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gollumlin.github.io/posts/37287&title=Blog的部署过程 - GollumLin's Blog&pics=https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/cover.jpg&summary=这篇文章记录了博客的搭建过程以及所踩的一些坑。(感觉写的乱七八糟，先就这了吧，以后熟悉了再完善😂)"
           
           >
           
@@ -647,7 +807,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://gollumlin.guthub.io/posts/37287.html&title=Blog的部署过程 - GollumLin's Blog&summary=这篇文章记录了博客的搭建过程以及所踩的一些坑。未完待续……"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gollumlin.github.io/posts/37287&title=Blog的部署过程 - GollumLin's Blog&pics=https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/cover.jpg&summary=这篇文章记录了博客的搭建过程以及所踩的一些坑。(感觉写的乱七八糟，先就这了吧，以后熟悉了再完善😂)"
           
           >
           
@@ -661,7 +821,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            target="_blank" href="https://t.me/share/url?url=http://gollumlin.guthub.io/posts/37287.html&text=Blog的部署过程 - GollumLin's Blog"
+            target="_blank" href="https://t.me/share/url?url=https://gollumlin.github.io/posts/37287&text=Blog的部署过程 - GollumLin's Blog"
           
           >
           
@@ -688,7 +848,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
       
-        <a class='next' href='/posts/16107.html'>
+        <a class='next' href='/posts/16107'>
           <p class='title'>Hello World<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
@@ -720,7 +880,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA%EF%BC%88win10%EF%BC%89"><span class="toc-text">一、环境的搭建（win10）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81github%E5%87%86%E5%A4%87"><span class="toc-text">二、github准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%88%9D%E5%A7%8B%E5%8C%96-Blog"><span class="toc-text">三、初始化 Blog</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA%EF%BC%88win10%EF%BC%89"><span class="toc-text">一、环境的搭建（win10）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81github%E5%87%86%E5%A4%87"><span class="toc-text">二、github准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%88%9D%E5%A7%8B%E5%8C%96-Blog"><span class="toc-text">三、初始化 Blog</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E8%B8%A9%E7%9A%84%E5%9D%91"><span class="toc-text">四、踩的坑</span></a></li></ol>
     </div>
   </section>
 
@@ -789,7 +949,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <div class='copyright'>
-        <p><a target="_blank" rel="noopener" href="https://gollumlin.github.io/">Copyright © 2021 GollumLin</a></p>
+        <p><a href="https://gollumlin.github.io/">Copyright © 2021 GollumLin</a></p>
 
         </div>
       
@@ -1595,7 +1755,7 @@ volantis.pjax.push(()=>{
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://gollumlin.guthub.io' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://gollumlin.github.io' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1613,7 +1773,7 @@ volantis.pjax.push(()=>{
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://gollumlin.guthub.io' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://gollumlin.github.io' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1635,7 +1795,7 @@ volantis.pjax.push(()=>{
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'http://gollumlin.guthub.io' + pv.getAttribute('data-path');
+          var url = 'https://gollumlin.github.io' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
