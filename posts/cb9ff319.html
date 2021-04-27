@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2021/3 - GollumLin&#39;s Blog</title>
+  <title>Mysql 绿色版的配置 - GollumLin&#39;s Blog</title>
+  
+    <meta name="keywords" content="Learn">
   
 
+  
+    <meta name="description" content=" 本文介绍的是mysql 5.5.62 免安装版的 配置过程">
   
 
   <!-- feed -->
@@ -108,7 +110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -359,7 +361,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  search' style="display: ;">
+        <div id="full" class='cover-wrapper post search' style="display: none;">
           
             <div id='cover-backstretch'></div>
           
@@ -443,189 +445,261 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/posts/7d48f32d">
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/Godzilla-vs-Kong/cover.jpg'/>
+      <a class='headimg-a'>
+        <img class='headimg' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/01.mysql'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title" >
-      <a href="/posts/7d48f32d">
-        Godzilla.vs.Kong观后感
-      </a>
-    </h2>
-  
-  <div class='md'>
     
-      <p>刚刚看完 哥斯拉大战金刚（Godzilla vs Kong），<strong>简短</strong>地记录一下感受吧😁（顺带练练手）</p>
     
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
+      <h1 class="title">
+        Mysql 绿色版的配置
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' href='/'><img src='/pictures/logo.jpg'></a>
-        
-        <time>2021-03-31</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Life-s-record/">Life's record</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/7d48f32d'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="/pictures/logo.jpg">
+    <p>GollumLin</p>
+  </a>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/posts/37287">
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/Blog的部署过程/cover.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/37287">
-        Blog的部署过程
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>这篇文章记录了博客的搭建过程以及所踩的一些坑。(感觉写的乱七八糟，先就这了吧，以后熟悉了再完善😂)</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
+          
         
           
-          <a class='avatar' href='/'><img src='/pictures/logo.jpg'></a>
-        
-        <time>2021-03-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Practice/">Practice</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/37287'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/posts/16107">
-        <img class='headimg' src='https://cdn.jsdelivr.net/gh/GollumLin/Blog/hello,world/cover.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/16107">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-    
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Practice/">Practice</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='dotted'>
-      <div>
+
+
+          
         
           
-          <a class='avatar' href='/'><img src='/pictures/logo.jpg'></a>
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年4月27日</p>
+  </a>
+</div>
+
+          
         
-        <time>2021-03-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Practice/">Practice</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Mysql 绿色版的配置" data-path="/posts/cb9ff319">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p> 本文介绍的是mysql 5.5.62 免安装版的 配置过程</p>
+<span id="more"></span>
+
+<h3 id="一、下载-amp-解压"><a href="#一、下载-amp-解压" class="headerlink" title="一、下载 &amp; 解压"></a>一、下载 &amp; 解压</h3><p>​    前往 <a href = "[MySQL :: Download MySQL Community Server (Archived Versions)](https://downloads.mysql.com/archives/community/)">Download</a> ，选择需要的版本（<kbd>.zip</kbd>）进行下载（以 <kbd>5.5.62</kbd>为例）。让互殴解压到自己常用的位置（建议软件安装时按类型设置目录，方便管理）</p>
+<center><img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/01.mysql下载地址.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/01.mysql下载地址.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="zoom:80%;" /></center>
+
+<h3 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h3><h4 id="a-设置环境变量「两种方式」"><a href="#a-设置环境变量「两种方式」" class="headerlink" title="a. 设置环境变量「两种方式」"></a>a. 设置环境变量「两种方式」</h4><blockquote>
+<p>第一种：直接在path中新增 –&gt;   mysql 所在路径\bin\  </p>
+</blockquote>
+<blockquote>
+<p>第二种：类似 JAVA ，新增一个MySQL_HOME项（mysql路径），然后再在Path中新增 –&gt;   %MySQL_HOME%\bin</p>
+</blockquote>
+<center><img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/02.环境变量.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/02.环境变量.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="zoom: 106%;" /></center>
+
+
+<h4 id="b-MySQL配置文件-my-ini"><a href="#b-MySQL配置文件-my-ini" class="headerlink" title="b. MySQL配置文件 my.ini"></a>b. MySQL配置文件 my.ini</h4><ol>
+<li><p>在<code>mysql</code>目录下找到 <code>my-small.ini</code>，复制并重命名为 <code>my.ini</code> </p>
+<p>「因为解压后的目录中并没有 <code>my-default.ini</code> ，所以选择 <code>my-small.ini</code>，其他的 <code>.ini</code>  可不可以没有尝试」</p>
+</li>
+<li><p>新增内容</p>
+<pre><code># 路径替换成对应的
+basedir = D:\Program\mysql-5.5.62-winx64
+datadir = D:\Program\mysql-5.5.62-winx64\data
+
+default-character-set = utf8 
+
+[WinMySQLadmin]
+Server = D:\Program\mysql-5.5.62-winx64\bin\mysqld.exe
+</code></pre>
+</li>
+</ol>
+<center><img src="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/03.my.ini配置.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/GollumLin/Blog/MySQL绿色版配置/03.my.ini配置.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="zoom: 84%;" /></center>
+
+<h4 id="c-安装服务，并启动"><a href="#c-安装服务，并启动" class="headerlink" title="c. 安装服务，并启动"></a>c. 安装服务，并启动</h4><pre><code class="mysql">mysqld install
+# 初始化-- mysqld --initialize-insecure --user=mysql 貌似可以跳过
+net start mysql
+</code></pre>
+<h4 id="d-初始化root密码"><a href="#d-初始化root密码" class="headerlink" title="d. 初始化root密码"></a>d. 初始化root密码</h4><pre><code class="mysql">mysql root # 或者 mysql -uroot，一开始无需密码即可进行
+use mysql
+alter user &#39;root@localhost&#39; identified by &#39;123456&#39;
+</code></pre>
+<h3 id="三、-问题"><a href="#三、-问题" class="headerlink" title="三、 问题"></a>三、 问题</h3><ol>
+<li><p>所谓的删除原有的 <kbd>data</kbd> 文件夹：</p>
+<p><b>不要删除</b>，可以先移动到其他位置。</p>
+<p>有很多说是先删除<kbd>data</kbd>，然后执行上面提到的  初始化  会创建<kbd>data</kbd> 并初始化相关文件。 </p>
+<p>然而解压后，源文件就包含 <kbd>data</kbd> 。</p>
+<p>我移走了 <kbd>data</kbd> ，执行初始化后 只生成了日志文件（总共4个），且 不知道是不是<code>my.ini</code> 配置了 <code>datadir</code> ，得先创建一个空文件夹 <kbd>data</kbd> ，否则会报错。</p>
+</li>
+<li><p>服务安装成功，也进行了初始化。之后启动服务时出现了 <code>1607</code> 错误（好象是）。</p>
+<p>打开日志，说是缺插件什么的。总之搜了半天问题，没一个回答能解决。</p>
+<p>最后又重新解压，配置完 <code>my.ini</code> 之后，直接安装服务、启动。</p>
+<p>ok！成功了！！！</p>
+</li>
+</ol>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/posts/16107'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>本文永久链接是：<a href=https://gollumlin.github.io/posts/cb9ff319>https://gollumlin.github.io/posts/cb9ff319</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-04-27T15:09:33+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年4月27日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Learn/" rel="nofollow"><i class="fas fa-tags fa-fw" aria-hidden="true"></i><p>Learn</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gollumlin.github.io/posts/cb9ff319&title=Mysql 绿色版的配置 - GollumLin's Blog&summary= 本文介绍的是mysql 5.5.62 免安装版的 配置过程"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gollumlin.github.io/posts/cb9ff319&title=Mysql 绿色版的配置 - GollumLin's Blog&summary= 本文介绍的是mysql 5.5.62 免安装版的 配置过程"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://gollumlin.github.io/posts/cb9ff319&text=Mysql 绿色版的配置 - GollumLin's Blog"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/posts/7d48f32d'>
+          <p class='title'>Godzilla.vs.Kong观后感<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>刚刚看完 哥斯拉大战金刚（Godzilla vs Kong），简短地记录一下感受吧😁（顺带练练手）
+
+
+一、Soundtrack &amp; Trailer------------------...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -633,120 +707,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/'>
-          <img no-lazy src='/pictures/head.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>GollumLin</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:dandingduan@gmail.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/GollumLin/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://weibo.com/u/5600152625"
-              class="social fab fa-weibo flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Life-s-record/" href="/categories/Life-s-record/"
-            id="categoriesLife-s-record"
-            ><div class='name'>Life's record</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Practice/" href="/categories/Practice/"
-            id="categoriesPractice"
-            ><div class='name'>Practice</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Blog/" style="font-size: 14px; color: #999">Blog</a> <a href="/tags/Hello-World/" style="font-size: 14px; color: #999">Hello World</a> <a href="/tags/Learn/" style="font-size: 14px; color: #999">Learn</a> <a href="/tags/%E8%A7%82%E5%BD%B1%E8%AE%B0%E5%BD%95/" style="font-size: 14px; color: #999">观影记录</a>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD-amp-%E8%A7%A3%E5%8E%8B"><span class="toc-text">一、下载 &amp; 解压</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%85%8D%E7%BD%AE"><span class="toc-text">二、配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#a-%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E3%80%8C%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E3%80%8D"><span class="toc-text">a. 设置环境变量「两种方式」</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b-MySQL%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-my-ini"><span class="toc-text">b. MySQL配置文件 my.ini</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#c-%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1%EF%BC%8C%E5%B9%B6%E5%90%AF%E5%8A%A8"><span class="toc-text">c. 安装服务，并启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#d-%E5%88%9D%E5%A7%8B%E5%8C%96root%E5%AF%86%E7%A0%81"><span class="toc-text">d. 初始化root密码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81-%E9%97%AE%E9%A2%98"><span class="toc-text">三、 问题</span></a></li></ol>
     </div>
   </section>
 
@@ -757,27 +730,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
 		  
 		  <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Mysql 绿色版的配置";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
